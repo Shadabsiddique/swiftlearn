@@ -1,0 +1,101 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-right: 40px;
+  box-shadow: -8px -1px 8px 0px #888888;
+
+}
+
+
+.header > div {
+  color: grey;
+  padding: 30px 50px;
+  position: relative;
+}
+
+.live div {
+  font-size: small;
+  position: absolute;
+    top: 15px;
+    left: 55px;
+}
+.live div::after{
+  content: "|●|";
+  color: orange;
+}
+
+
+
+
+.gradient-button {
+  padding: 7px 20px !important; 
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF !important;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.gradient-button {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button:hover { background-position: right center; }
+
+
+.first-head ,.second-head{
+  color: grey;
+  max-width: 90%;
+  margin: 0px auto;
+  margin-bottom: 70px;
+}
+
+.third-head {
+  color: grey;
+  display: flex;
+  margin: 0px auto;
+  border: 2px solid grey;
+  max-width: 80%;
+  border-radius: 10px;
+  justify-content: space-evenly;
+  margin-top: 4em ;
+  
+}
+  .third-head  div{
+    padding: 20px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+  }
+  .third-head  div:hover{
+    border-bottom: 5px solid grey;
+  }
+
+
+.prevtag, .nextag{
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.slider-container{
+  margin-bottom: 2%;
+
+}
